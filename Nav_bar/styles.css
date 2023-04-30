@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+} 
+body {
+    background-color: #7a7a7a;
+}
+.navbar {
+    background-color: #444444;
+    width: 1200px;
+    margin: auto;
+}
+ul {
+    list-style: none;
+}
+li {
+    float: left;
+    font-family: 'Ropa Sans', sans-serif;
+    letter-spacing: .3px;
+}
+a {
+    display: inline-block;
+    padding: 20px 15px;
+    text-decoration: none;
+    color: #fff;
+}
+.navbar>ul.main>li>a:hover {
+    background-color: #3c3c3c;
+    color: #ffd000;
+}
+.navbar>ul.client>li>a:hover {
+    color: #ffa200;
+}
+.logo {
+    width: 35px;
+    margin-top: 0;
+    user-select: none;    
+}
+.navbar>ul.branding {
+    margin-right: 50px;
+    margin-left: 20px;
+}
+.navbar>ul.branding>li:first-child {
+    margin-top: -10px;
+    margin-bottom: -11px;
+    margin-right: -20px;
+}
+.navbar>ul.branding>li:nth-child(2) {
+    font-family: 'Patua One', cursive;
+    font-size: 18px;
+    line-height: 18px;
+    user-select: none;
+}
+.navbar>ul.branding>li:last-child::before {
+    content: "🕿";
+    color: #fff;
+    margin-left: 10px;
+    margin-right: -10px;
+}
+.navbar>ul.branding>li.tel>a:hover {
+    color: #ffa200;
+}
+.navbar>ul.branding,
+.navbar>ul.main {
+    float: left;
+}
+.navbar>ul.client {
+    float: right;
+    margin-right: 20px;
+}
+.fix {
+    clear: both;
+}
