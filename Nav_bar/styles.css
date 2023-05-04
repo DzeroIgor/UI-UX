@@ -60,6 +60,10 @@ a {
     margin-left: 10px;
     margin-right: -10px;
 }
+.navbar>ul.branding>li:last-child:hover::before {
+    content: "🕿";
+    color: #ffa200;
+}
 .navbar>ul.branding>li.tel>a:hover {
     color: #ffa200;
 }
