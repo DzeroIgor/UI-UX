@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+} 
+body {
+    background-color: #7a7a7a;
+}
+ul {
+    display: table-cell;
+    list-style: none;
+    vertical-align: middle;
+    /* border: 1px solid #ffa200; */
+}
+li {
+    display: table-cell;
+    font-family: 'Ropa Sans', sans-serif;
+    letter-spacing: .3px;
+    vertical-align: middle;
+}
+a {
+    display: inline-block;
+    padding: 20px 15px;
+    text-decoration: none;
+    color: #fff;
+    margin: -2px 0;
+}
+.navbar {
+    background-color: #444444;
+    width: 85%;
+    margin: auto;
+    display: table;
+}
+.navbar ul.main>li>a:hover {
+    background-color: #3c3c3c;
+    color: #ffd000;
+}
+.navbar ul.client>li>a:hover {
+    color: #ffa200;
+}
+.row {
+    display: table-row;
+}
+.navbar ul.branding {
+    padding-left: 50px;
+}
+.navbar ul.client {
+    text-align: right;
+    padding-right: 50px;
+}
+.logo {
+    width: 35px;
+    user-select: none;    
+    margin-top: -10px;
+    margin-bottom: -10px;
+    margin-right: -20px;
+}
+.navbar ul.branding>li:first-child {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.navbar ul.branding>li:nth-child(2) {
+    font-family: 'Patua One', cursive;
+    font-size: 18px;
+    user-select: none;
+}
+.navbar ul.branding>li:last-child::before {
+    content: "🕿";
+    color: #fff;
+    margin-right: -10px;
+    margin-left: 20px;
+}
+.navbar ul.branding>li.tel>a:hover {
+    color: #ffa200;
+}
+.navbar ul.branding>li:last-child:hover::before {
+    content: "🕿";
+    color: #ffa200;
+}
+
