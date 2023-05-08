@@ -12,7 +12,6 @@ ul {
     display: table-cell;
     list-style: none;
     vertical-align: middle;
-    /* border: 1px solid #ffa200; */
 }
 li {
     display: table-cell;
@@ -33,22 +32,14 @@ a {
     margin: auto;
     display: table;
 }
-.navbar ul.main>li>a:hover {
-    background-color: #3c3c3c;
-    color: #ffd000;
-}
-.navbar ul.client>li>a:hover {
-    color: #ffa200;
-}
-.row {
+.navbar .row {
     display: table-row;
 }
 .navbar ul.branding {
     padding-left: 50px;
 }
 .navbar ul.client {
-    display: table-row;
-    text-align: right;
+    width: 100px;
     padding-right: 50px;
 }
 .logo {
@@ -78,6 +69,13 @@ a {
 }
 .navbar ul.branding>li:last-child:hover::before {
     content: "🕿";
+    color: #ffa200;
+}
+.navbar ul.main>li>a:hover {
+    background-color: #3c3c3c;
+    color: #ffd000;
+}
+.navbar ul.client>li>a:hover {
     color: #ffa200;
 }
 
