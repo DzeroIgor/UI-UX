@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #333;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+ul {
+    list-style: none;
+}
+h2 {
+    margin: .5em .25em;
+}
+.contacts li {
+    display: table;
+    padding: .25em;
+}
+.contacts li>* {
+    display: table-cell;
+    vertical-align: middle;
+    transition: 1s;
+}
+.contacts .avatar {
+    display: inline-block;
+    margin: 0;
+}
+.contacts .avatar img {
+    width: 4em;
+}
+.contacts .avatar .status {
+    width: .8em;
+    height: .8em;
+    display: inline-block;    
+    border-radius: .6em;
+    margin-left: -1.55em;
+    margin-bottom: .05em;
+}
+.contacts .info {
+    padding-left: 1em;
+    width: 8em;
+} 
+.contacts .info>span {
+    display: table-row; 
+    line-height: 1.2em;
+}
+.contacts .info>span:last-child {
+    font-size: .85em;
+    color: #c2c2c2;
+}
+.contacts .action { 
+    padding: 0 3em;
+}
+.contacts .action a.add {    
+    text-decoration: none;
+    background-color: #111;
+    color: #ddd;
+    display: block;
+    height: 2em;
+    width: 2em;
+    text-align: center;
+    line-height: 2em;
+    border-radius: 2em;
+    transition: 1s;
+}
+.contacts .action a.add:hover {
+    background-color: #222;
+    color: #ffffff;
+    transform: rotate(180deg);
+}
+.contacts .add-details > div {
+    width: 0;
+    transition: 1.2s;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.contacts .add-details>div a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0 .5em;
+}
+.contacts .add-details>div a:hover {
+    color: #ffcc00;
+}
+.contacts li:target .add-details > div {
+    width: 100%;
+}
+.contacts li:target >* {
+    transform: translateX(-16em);    
+}
+.contacts .first-menu {
+    vertical-align: middle;
+}
+
+.contacts .first-menu>* {
+    display: table-cell;
+    vertical-align: middle;
+}
+.contacts .menu {
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    border-radius: 2em;
+    background-color: #111;
+    text-align: center;
+    line-height: 2.1em;
+    text-decoration: none;
+    color: #ffffff;
+    margin-right: 1em;
+    vertical-align: middle;
+}
+.contacts .add-menu > div {    
+    width: 0;
+    transition: .5s;
+    overflow: hidden;
+}
+.contacts .add-menu a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.85em;
+    margin-right: 1em;
+}
+.contacts .add-menu a:hover {
+    color: #ffcc00;
+}
+.contacts .first-menu:target .add-menu > div {
+    width: 100%;    
+}
+.status.on {
+    background-color: #47dd15;
+    border: 3px solid #333;    
+}
+.status.off {
+    background-color: #7f7f7f;
+    border: 3px solid #333;    
+}
