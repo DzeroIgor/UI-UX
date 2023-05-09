@@ -1,0 +1,223 @@
+/* Common styles */
+html {
+    height: 100%;
+}
+body {
+    background-color: #345;
+    margin: 0;
+    color: #fff;
+    height: 100%;
+}
+.screen {
+    width: 27em;
+    height: 56em;
+    border: 2px solid #fff;
+    margin: auto;
+    background-color: #fff;
+}
+/* top styles */
+.facebook {
+    height: 2em;
+    margin-top: 3.9em;
+    vertical-align: middle;
+}
+.facebook img {
+    width: 8.8em;
+    margin-left: .8em;
+}
+.facebook .message {
+    height: 2.5em;
+    width: 2.5em;
+    border-radius: 2em;
+    background-color: #eeeeee;
+    background-image: url(images/free-facebook-messenger-1464524-1239438.png);
+    background-repeat: no-repeat;
+    background-position: .265em .265em;
+    background-size: 2em;
+    float: right;
+    margin-right: .8em;
+    margin-top: -.5em;
+}
+.facebook .glass {
+    height: 2.5em;
+    width: 2.5em;
+    border-radius: 2em;
+    background-color: #eeeeee;
+    background-image: url(images/Daco_4815026.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1.5em;
+    float: right;
+    margin-right: .6em;
+    margin-top: -.5em;
+}
+.media {
+    height: 3.5em;
+    margin-top: .8em;
+    border-bottom: 1px solid #eeeeee;
+}
+.media .icon {
+    display: inline-block;
+    color: #636363;
+    border: 2px solid #fff;
+    height: 3.1em;
+    width: 4em;
+    text-align: center;    
+}
+.media .icon.bb {
+    color: #3a55d0;
+    border-bottom: 2px solid #3a55d0;
+}
+.media .icon i {
+    font-size: 1.6em;
+    line-height: 1.9em;
+    cursor: pointer;
+}
+.media .icon i:hover {
+    color: #3a55d0;
+}
+.post {
+    height: 4.8em;
+}
+.post .user {
+    display: inline-block;
+    height: 2.8em;
+    width: 2.8em;
+    border-radius: 2em;
+    margin: 1em .6em 1em 1em;
+    background-image: url(images/profil.jpg);
+    background-size: cover;    
+    vertical-align: top;
+}
+.post .input {
+    display: inline-block;
+    margin-top: 1.1em;
+}
+.post input {
+    height: 2.8em;
+    width: 19.5em;
+    border-radius: 2em;
+    border: 1px solid #d8d7d7;
+    padding: .3em 0 0 1.7em;
+    padding-right: 0;
+}
+::placeholder {
+    font-size: 1.4em;
+    color: #000000;
+}
+.post .photo {
+    display: inline-block;
+    color: #098b00;
+    width: 4em;
+    text-align: center;
+}
+.post .photo i {
+    line-height: 1.8em;
+    font-size: 1.6em;
+    cursor: pointer;
+}
+.space {
+    height: 1em;
+    background-color: #c8c8c8;
+}
+
+/* Stories component styles */
+.stories {
+    /* border: 1px dotted #ffcc00; */
+    
+    white-space: nowrap;
+    overflow-x: scroll;
+    padding: .9em;
+
+    
+}
+.stories .slide {
+    display: inline-block;
+
+    width: 7.4em;
+    height: 13.9em;
+    background-size: cover;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    background-color: #eaeaea;    
+    border-radius: .8em;
+    border: 1px solid #cacaca;
+    overflow: hidden;
+    margin-right: .2em;
+}
+.stories .slide:first-child {
+    background-image: url(images/profil.jpg);
+    background-size: auto 9.2em;
+    background-position: center top;
+}
+.stories .slide:nth-child(2) {
+    background-image: url(images/1-300x600.jpg);
+}
+.stories .slide:nth-child(3) {
+    background-image: url(images/5-300x600.jpg);
+}
+.stories .slide:nth-child(4) {
+    background-image: url(images/3-300x600.jpg);
+}
+.stories .slide:nth-child(5) {
+    background-image: url(images/4-300x600.jpg);
+}
+.stories .slide .avatar {
+    border: 2px solid #2f55fc;
+    display: inline-block;
+    margin: .6em;
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 100%;
+    overflow: hidden;
+    
+}
+.stories .slide img {
+    width: 3.15em;
+    margin-left: -.15em;
+}
+.stories .slide .label {
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: .9em;
+    text-align: left;
+    margin-top: 7.8em;
+    margin-left: .7em;
+    white-space: wrap;
+}
+.stories .slide .label.c {
+    text-align: center;
+    color: #000000;
+    margin-top: -7.3em;
+    font-size: 1em;
+    margin-left: -.02em;
+}
+.stories .add {
+    display: block;
+    width: 2.3em;
+    height: 2.3em;
+    border-radius: 2em;
+    border: 3px solid #eaeaea;
+    margin: 7.8em auto;
+    background-color: #2f55fc;
+    text-align: center;
+}
+.stories .add .line{
+    background-color: #fff;
+    width: 1.3em;
+    height: 0.25em;
+    border-radius: 1em;
+    margin: 1em auto;
+}
+.stories .add .line-1 {
+    display: inline-block;
+    background-color: #fff;
+    width: .25em;
+    height: 1.3em;
+    border-radius: 1em;
+    transform: translateY(-1.78em);
+    
+}
+::-webkit-scrollbar {
+    height: 0;
+}
