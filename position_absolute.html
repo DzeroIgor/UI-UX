@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absolute</title>
+    <style>
+        body {
+            background-color: #222;
+        }
+        .parent {
+            display: inline-block;
+        }
+        .parent div {
+            width: 100px;
+            height: 100px;
+        }
+        .parent .child-1 {
+            background-color: #8c8c8c;
+            position: absolute;
+            top: 200px;
+            left: 200px;
+            z-index: 2;
+        }
+        .parent .child-2 {
+            background-color: #a6a6a6;
+            position: absolute;
+            top: 150px;
+            left: 150px;
+            z-index: 1;
+        }
+        .parent .child-3 {
+            background-color: #bfbfbf;
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            z-index: 0;
+        }
+        .parent .child-4 {
+            background-color: #d9d9d9;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            z-index: -1;
+        }
+        .parent .child-5 {
+            background-color: #f2f2f2;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            z-index: -2;
+        }
+        .parent .child-6 {
+            background-color: #8c8c8c;
+            position: absolute;
+            top: 200px;
+            right: 200px;
+            z-index: 2;
+        }
+        .parent .child-7 {
+            background-color: #a6a6a6;
+            position: absolute;
+            top: 150px;
+            right: 150px;
+            z-index: 1;
+        }
+        .parent .child-8 {
+            background-color: #bfbfbf;
+            position: absolute;
+            top: 100px;
+            right: 100px;
+            z-index: 0;
+        }
+        .parent .child-9 {
+            background-color: #d9d9d9;
+            position: absolute;
+            top: 50px;
+            right: 50px;
+            z-index: -1;
+        }
+        .parent .child-10 {
+            background-color: #f2f2f2;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            z-index: -2;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child-1">1</div>
+        <div class="child-2">2</div>
+        <div class="child-3">3</div>
+        <div class="child-4">4</div>
+        <div class="child-5">5</div>
+        <div class="child-6">6</div>
+        <div class="child-7">7</div>
+        <div class="child-8">8</div>
+        <div class="child-9">9</div>
+        <div class="child-10">10</div>
+    </div>
+</body>
+</html>
