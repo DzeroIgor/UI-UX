@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    height: 100vh;
+}
+
+body {
+    height: 100vh;
+    
+}
+.window-fire {
+    position: absolute;
+    top: 57.3%;
+    left: 49.5%;
+    width: 4.5%;
+    height: 12%;
+    background-image: radial-gradient(darkorange 40%, transparent);
+    border-radius: 10%;
+    mix-blend-mode: soft-light;
+    animation: burn 1s infinite;
+}
+.landscape {
+    animation: day-night 30s linear infinite;
+    position: absolute;
+    height: 100vh;
+    width: 100%;    
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+.snow {
+    animation: day-night 30s linear infinite;
+    position: absolute;
+    width: 100%;
+    height: 98%;
+}
+.snow .flake {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    margin-top: -10px;
+    border-radius: 10px;
+    background-image: radial-gradient(white, transparent);
+}
+.snow .flake.small {
+    width: 5px;
+    height: 5px;
+    animation-name: 30s;
+}
+.snow .flake:nth-child(3n) {
+    animation: flake-anim-1 20s linear infinite;
+}
+.snow .flake:nth-child(2n) {
+    animation: flake-anim-2 25s linear infinite;
+}
+.snow .flake:nth-child(1) {
+    animation-delay: 6s;
+    left: 3%;
+}
+.snow .flake:nth-child(2) {
+    left: 16%;
+    animation-delay: 7s;
+}
+.snow .flake:nth-child(3) {
+    left: 35%;
+    animation-delay: 12s;
+}
+.snow .flake:nth-child(4) {
+    left: 40%;
+    animation-delay: 5s;
+}
+.snow .flake:nth-child(5) {
+    left: 26%;
+    animation-delay: 15s;
+}
+.snow .flake:nth-child(6) {
+    left: 90%;
+    animation-delay: 2s;
+}
+.snow .flake:nth-child(7) {
+    left: 58%;
+    animation-delay: 23s;
+}
+.snow .flake:nth-child(8) {
+    left: 80%;
+    animation-delay: 18s;
+}
+.snow .flake:nth-child(9) {
+    left: 73%;
+    animation-delay: 7s;
+}
+.snow .flake:nth-child(10) {
+    left: 65%;
+    animation-delay: 3s;
+}
+.snow .flake:nth-child(11) {
+    left: 95%;
+    animation-delay: 11s;
+}
+.snow .flake:nth-child(12) {
+    left: 48%;
+    animation-delay: 23s;
+}
+.snow .flake:nth-child(13) {
+    left: 88%;
+    animation-delay: 19s;
+}
+.snow .flake:nth-child(14) {
+    left: 6%;
+    animation-delay: 26s;
+}
+.snow .flake:nth-child(15) {
+    left: 44%;
+    animation-delay: 8s;
+}
+
+
+.snow .flake.small:nth-child(16) {
+    left: 12%;
+    animation-delay: 2s;
+}
+.snow .flake.small:nth-child(17) {
+    left: 13%;
+    animation-delay: 25s;
+}
+.snow .flake.small:nth-child(18) {
+    left: 35%;
+    animation-delay: 3s;
+}
+.snow .flake.small:nth-child(19) {
+    left: 54%;
+    animation-delay: 17s;
+}
+.snow .flake.small:nth-child(20) {
+    left: 30%;
+    animation-delay: 11s;
+}
+.snow .flake.small:nth-child(21) {
+    left: 87%;
+    animation-delay: 20s;
+}
+.snow .flake.small:nth-child(22) {
+    left: 52%;
+    animation-delay: 25s;
+}
+.snow .flake.small:nth-child(23) {
+    left: 80%;
+    animation-delay: 5s;
+}
+.snow .flake.small:nth-child(24) {
+    left: 70%;
+    animation-delay: 20s;
+}
+.snow .flake.small:nth-child(25) {
+    left: 65%;
+    animation-delay: 10s;
+}
+.snow .flake.small:nth-child(26) {
+    left: 24%;
+    animation-delay: 18s;
+}
+.snow .flake.small:nth-child(27) {
+    left: 57%;
+    animation-delay: 20s;
+}
+.snow .flake.small:nth-child(28) {
+    left: 34%;
+    animation-delay: 24s;
+}
+.snow .flake.small:nth-child(29) {
+    left: 74%;
+    animation-delay: 24s;
+}
+.snow .flake.small:nth-child(30) {
+    left: 47%;
+    animation-delay: 22s;
+}
+@keyframes flake-anim-1 {    
+    from {top: -2%; opacity: 1;}
+    85% {top: 100%; opacity: .4;}
+    to {top: 100%; opacity: 0;}
+}
+@keyframes flake-anim-2 {    
+    from {top: -2%; opacity: 1;}
+    85% {top: 98%; opacity: .4;}
+    to {top: 98%; opacity: 0;}
+}
+@keyframes day-night {
+    from {filter: brightness(100%) grayscale(0%);}
+    50% {filter: brightness(30%) grayscale(50%);}
+    to {filter: brightness(100%) grayscale(0%);}    
+}
+@keyframes burn {
+    from {opacity: .3;}
+    20% {opacity: .7;}
+    50% {opacity: .5;}
+    70% {opacity: .9;}
+    to {opacity: .6;}    
+}
