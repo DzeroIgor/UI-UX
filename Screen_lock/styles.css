@@ -57,6 +57,7 @@
     border-radius: 20px;
     background-color: #353535;
     position: absolute;
+    z-index: 1;
     top: 24px;
     left: 50%;
     transform: translateX(-50%);
