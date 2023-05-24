@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal Window | pseudo + position</title>
+</head>
+<body>
+    <main id="content">
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, soluta.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ab est non facilis doloribus eos recusandae, a mollitia accusamus adipisci inventore nisi, sit doloremque, eveniet provident illum nulla nobis natus! Natus cumque, quidem nam nemo iusto provident repellat perferendis ut a voluptatem. Ut laborum ex aliquam, temporibus similique molestias illum?</p>
+        <p>Quis autem explicabo numquam unde dolor necessitatibus eos amet, qui hic? Non ducimus provident debitis dolores tempore? Delectus ea, dolorum in excepturi officiis ducimus maiores fuga quo quibusdam non ab a, eaque architecto quaerat nam quis, provident corrupti cum dolores voluptatum sapiente! Ab pariatur et optio obcaecati facere sed voluptate?</p>
+        <p>Adipisci, nostrum! Fugit rerum dolorem perferendis, modi laboriosam magnam dolore. Consectetur ipsam recusandae accusantium eius eum ullam atque perferendis obcaecati blanditiis, quos sunt aut amet? Cum natus dignissimos, quod nobis id excepturi magnam ratione nam perspiciatis tenetur vel? Dolorum iure maiores molestiae! Laborum laboriosam, odit repudiandae unde molestiae ea quidem?</p>
+        <p class="ad">To benefit for it HIT <a href="#modal">THIS BUTTON</a></p>
+    </main>
+    <div id="modal">
+        <h1>Apply for this product!</h1>
+        <h2>In order to apply fill in the blanck</h2>
+        <form>
+            <label for="full-name">Full Name:</label>
+            <input 
+                type="text" 
+                name="full-name" 
+                id="full-name" 
+                placeholder="John Doe" 
+                autofocus 
+                required>
+            <label for="phone">
+                Phone:
+                <select name="code" id="code">
+                <option value="">Select</option>
+                <option value="">+373</option>
+                <option value="">+381</option>
+                <option value="">+359</option>
+                </select>
+            </label>
+            <input 
+                type="text" 
+                id="phone" 
+                name="phone" 
+                placeholder="123 456 789" 
+                required>
+            <label for="email">Email:</label>
+            <input 
+            type="text" 
+            id="email"
+            name="email"
+            placeholder="john@somthing.example" 
+            required>
+            <button>APPLY!!!</button>            
+        </form>
+        <a href="#">
+            <i class="fa-solid fa-xmark"></i>
+        </a>
+    </div>
+    <div class="overlay"></div>
+</body>
+</html>
