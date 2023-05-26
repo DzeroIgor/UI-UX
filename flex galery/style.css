@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color:#345;
+}
+.container {
+    border: 2px solid #fff;
+    width: 1000px;
+    height: 600px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px auto;
+}
+.container img {
+    width: 150px;
+    border: 5px solid #fff;
+}
+.container img:nth-child(1),
+.container img:nth-child(5) {
+    align-self: flex-start;
+}
+.container img:nth-child(3) {
+    align-self: flex-end;
+    align-content: st;
+}
