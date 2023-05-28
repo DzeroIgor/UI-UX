@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #456;
+        }
+        .container {
+            width: 200px;
+            height: 200px;
+            /* border: 1px dotted #eee; */
+            margin: 100px auto;
+            position: relative;
+        }
+        .container div {
+            width: 14px;
+            height: 60px;
+            border-radius: 20px;
+            /* background-color: #000; */
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            transform-origin: 7px 100px;
+            animation: grad 2s infinite;
+        }
+        .container div:nth-child(1) {
+            transform: rotate(0deg);
+        }
+        .container div:nth-child(2) {
+            transform: rotate(36deg);
+            animation-delay: .2s;
+        }
+        .container div:nth-child(3) {
+            transform: rotate(72deg);
+            animation-delay: .4s;
+        }
+        .container div:nth-child(4) {
+            transform: rotate(108deg);
+            animation-delay: .6s;
+        }
+        .container div:nth-child(5) {
+            transform: rotate(144deg);
+            animation-delay: .8s;
+        }
+        .container div:nth-child(6) {
+            transform: rotate(180deg);
+            animation-delay: 1s;
+        }
+        .container div:nth-child(7) {
+            transform: rotate(216deg);
+            animation-delay: 1.2s;
+        }
+        .container div:nth-child(8) {
+            transform: rotate(252deg);
+            animation-delay: 1.4s;
+        }
+        .container div:nth-child(9) {
+            transform: rotate(288deg);
+            animation-delay: 1.6s;
+        }
+        .container div:nth-child(10) {
+            transform: rotate(324deg);
+            animation-delay: 1.8s;
+        }
+        @keyframes grad {
+            from {
+                background-color: #000;
+            }          
+            75% {
+                background-color: #4949499d;
+            }  
+            to {
+                background-color: #ffffff00;
+            }  
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>
