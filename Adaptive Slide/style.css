@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/* method using 100%, parent > child */
+
+/* start */
+
+/* html {
+    height: 100%;
+    width: 100%;
+}
+body {
+    height: 100%;
+    width: 100%;
+}
+.carousel {
+    height: 100%;
+    width: 100%;
+    background-color: aqua;
+} */
+
+/* finish */
+
+/* method using 100%, position absolute */
+
+/* .carousel {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+} */
+
+body {
+    background-color: #789;
+}
+.carousel {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.carousel img {
+    width: 350px;
+    margin: 40px 20px 0;
+}
+.carousel figcaption {
+width: 100%;
+text-align: center;
+align-self: flex-start;
+}
+figcaption h2 {
+    font: 600 2.5em Verdana, sans-serif;
+}
