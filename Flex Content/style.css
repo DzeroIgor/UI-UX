@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1, h2, h3 {
+    font-family: 'antonioregular';
+}
+figure {
+    margin: 0;
+}
+
+/* Large screen */
+
+.news {
+    width: 80%;
+    margin: 5% auto 20%;
+}
+.news h3 {
+    margin: 1.2em 0;
+}
+.news header {
+    border-top: 2px solid #aaa;
+    border-bottom: 2px solid #aaa;
+}
+.news header h1 {
+    font-size: 200%;
+    margin-bottom: 3%;
+}
+header h2 {
+    line-height: 1.5em;
+}
+.news p {
+    text-align: justify;
+}
+.news .articles {
+    display: flex;      
+    gap: 2%;      
+}
+.news article {
+    width: 25%;
+    border-bottom: 1px solid #999;
+    padding-bottom: 4%;
+    position: relative;
+}
+.news article:first-child {
+    width: 50%;
+}
+.news article:nth-child(2) {
+    order: -1;
+}
+@supports not (object-fit: cover) {
+    .news article figure {
+        height: 23em;
+        overflow: hidden;
+    }
+}
+.news article a {
+    position: absolute;
+    bottom: 1%;
+    right: 1%;
+    text-decoration: none;
+}
+.news article a:hover {
+    color: #ff0000;
+}
+@supports (object-fit: cover) {
+    .news img {
+        width: 100%;
+        height: 25em;
+        object-fit: cover;
+    }
+}
+
+
+/* MD - screen */
+
+@media (max-width: 1200px) {
+    .news .articles {
+        flex-wrap: wrap;  
+        justify-content: space-between;
+    }
+    .news .articles article {
+        width: 100%;    
+    }
+    .news img {
+        margin-bottom: 1em;
+    }
+    .news article:nth-child(2) {
+        order: 0;
+    }
+    .news article:nth-child(2),
+    .news article:nth-child(3) {
+        width: 48%;
+    }
+    .news .columns {
+        columns: 2;
+        align-items: flex-start;
+    }
+    .news .columns p {
+        margin: 0 0 1em;
+    }
+}
+/* SS - screen */
+
+@media (max-width: 650px) {
+    .news .articles {
+        flex-direction: column;
+    }
+    .news .articles article {
+        width: 100%;    
+    }
+    .news article:nth-child(2) {
+        order: 0;
+    }
+        .news .columns {
+            columns: 1;
+        } 
+}
