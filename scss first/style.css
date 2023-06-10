@@ -1,0 +1,36 @@
+body {
+  background-color: #333;
+  display: flex;
+  height: 100vh;
+  margin: 0;
+}
+
+figure {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  flex-wrap: wrap;
+  margin: 0;
+}
+figure img {
+  height: 60vh;
+  border: 5px solid #ffea7d;
+  box-shadow: 0 0 1px 3px #ffe14a;
+}
+figure img:hover {
+  border: 5px solid #ffe14a;
+  box-shadow: 0 0 4px 3px #ffd917;
+}
+figure figcaption {
+  width: 100vw;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+figure figcaption h2 {
+  margin-bottom: 0;
+  color: #fff2b0;
+}
+figure figcaption h3 {
+  margin-top: 1vh;
+  color: #ffe564;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,39 @@
+// Variables
+$colorDark: #222;
+$colorLight: #008000;
+$colorActive: #005703;
+$size: 100px;
+
+body {
+    background-color: $colorDark;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+button {
+    background-color: $colorLight;
+    background-image: linear-gradient(to bottom, darken($colorLight, 10%), lighten($colorLight, 10%), darken($colorLight, 10%));
+    width: $size;
+    height: $size;
+    border-radius: 100%;
+    color: lighten($colorLight, 100%) ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    font-size: $size / 4;
+    border: $size / 25 solid darken($colorLight, 10%);
+    box-shadow: 0 0 $size / 50 $size / 100 darken($colorDark, 50%);
+    text-shadow: 0 0 $size / 50 darken($colorLight, 10%);
+    transition: .02s;
+    &:hover {
+        background-image: linear-gradient(to bottom, lighten($colorLight, 10%), darken($colorLight, 10%), lighten($colorLight, 10%));
+        border: $size / 25 solid lighten($colorLight, 10%);
+        text-shadow: 0 0 $size / 50 lighten($colorLight, 30%);
+    }
+    &:active {
+        background-image: linear-gradient(to bottom, lighten($colorActive, 10%), darken($colorActive, 10%), lighten($colorActive, 10%));
+        border: $size / 20 solid lighten($colorActive, 10%);
+        text-shadow: 0 0 $size / 10 lighten($colorActive, 50%);
+        scale: 104%;
+    }
+}

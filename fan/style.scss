@@ -1,0 +1,72 @@
+// Variables
+$colorDark: #222;
+$colorLight: #fff;
+$mainColor: #006ac2;
+$duration: 2s;
+
+// if one of the colors is not working
+@if $mainColor == green {
+    $mainColor:lime
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    background-color: $colorDark;
+    background-image: radial-gradient(lighten($colorDark, 10%), $colorDark );
+}
+.fan {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+        padding: 2em;
+        width: 40em;
+        height: 3em;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        transform-origin: 38.5em;
+        border-radius: 1em 60% 60% 1em;
+        transition: $duration;
+        @for $n from 1 through 13 {
+            &::before {
+                content: "";
+                display: block;
+                width: 1em;
+                height: 1em;
+                position: absolute;
+                right: 10%;
+                top: calc(50% - 0.5em);
+                background-color: $colorDark;
+                border-radius: 100%;
+                
+            }
+            &:nth-child(#{$n}) {                
+                background-color: lighten(darken($mainColor, 40%), 3% * $n);
+                transform: rotate(-90deg);
+                box-shadow: 0 0 .25em .25em lighten($colorDark, .25% * $n);
+                color: darken($colorLight, 39% - 3% * $n)                
+            }
+        }
+    }
+    h2, p {
+        margin: 0;
+    }
+
+    &:hover li {
+        @for $n from 1 through 13 {
+                        
+                &:nth-child(#{$n}) {
+                    background-color: lighten(darken($mainColor, 40%), 3% * $n);
+                    transform: rotate(105deg - $n * 15deg);
+                    box-shadow: 0 0 .5em .5em lighten($colorDark, .25% * $n);
+                    color: darken($colorLight, 39% - 3% * $n)
+                }
+            }
+    }
+}
