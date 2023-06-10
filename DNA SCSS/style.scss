@@ -1,0 +1,97 @@
+$size: 25px;
+$firstColor: #ff3e3e;
+$secondColor: #eaff2d;
+$thirdColor: #ffc400;
+
+
+body {
+    background-color: #272727;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}   
+.dna {
+    perspective: $size *17;
+
+    .line {
+        width: $size * 3.6;
+        height: $size * .25;
+        display: block;
+        align-items: center;
+        transform: translateZ(0);
+        animation: rotate-line 3.4s linear infinite;
+        
+        .gene {
+            margin-left: $size / 1;
+            display: flex;
+            width: $size * 2.8;
+            align-items: center;
+            justify-content: space-between;
+
+            .a-20 {
+                display: inline-block;
+                height: $size * .2;
+                width: $size * .2;
+                border-radius: 100%;
+                background-color: $firstColor;
+                }
+            
+            .a-15 {
+                display: inline-block;
+                height: $size * .15;
+                width: $size * .15;
+                border-radius: 100%;
+                background-color: $secondColor;
+            }
+            
+            .a-15m {
+                display: inline-block;
+                height: $size * .15;
+                width: $size * .15;
+                border-radius: 100%;
+                background-color: $secondColor;
+
+            }
+        
+            .a-10 {
+                display: inline-block;
+                height: $size * .1;
+                width: $size * .1;
+                border-radius: 100%;
+                background-color: $thirdColor;
+            }
+        
+            .a-10m {
+                display: inline-block;
+                height: $size * .1;
+                width: $size * .1;
+                border-radius: 100%;
+                background-color: $thirdColor;
+            }
+        
+            .a-20m {
+                display: inline-block;
+                height: $size * .2;
+                width: $size * .2;
+                border-radius: 100%;
+            }
+        
+        }
+
+        @for $n from 1 through 115 {
+            &.line:nth-child(#{$n}) {
+                animation-delay: .05s * $n;
+            }
+        }
+    }
+}
+
+// ANIMATION CONTROL
+
+@keyframes rotate-line {
+    from {transform: rotateY(0deg)}
+    to {transform: rotateY(720deg)}
+}
