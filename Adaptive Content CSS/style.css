@@ -2,7 +2,7 @@ html {
     --color-one: #222;
     --borderColor: #999;
     --accentColor: #fe0000;
-    --mainFont: Verdana, Geneva, Tahoma, sans-serif;
+    --mainFont: 'petahja';
 }
 body {
     font-family: var(--mainFont);
