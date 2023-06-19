@@ -1,0 +1,259 @@
+$blueColor: #0069d1;
+:root {
+    scroll-behavior: smooth;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navbar {
+    position: fixed;
+    z-index: 1000;
+
+    ul {
+        margin: 3vh 0 0;
+        padding: 0;
+        padding-left: 1em;
+        display: flex;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+        li {
+            list-style: none;
+            margin: 0 2em;
+            
+            img {
+                width: 5vw;
+                filter: invert(1);
+                transition: .25s linear;
+                &:hover {
+                    filter: invert(0);
+                }
+            }  
+
+            a {
+                text-decoration: none;
+                color: white;
+                font-size: 1.5em;    
+                font-weight: 600;    
+                &:hover {
+                    color: #000;
+                }
+            }
+        }
+    }
+}
+
+
+.section {
+    height: 100vh;
+    width: auto;
+    font-size: 5vh;
+    text-align: right;
+    color: white;
+    box-sizing: border-box;
+
+    > * {
+        position: relative;
+        z-index: 999;
+    }
+
+    &#presentation {
+        padding: 5vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+
+        h1 {
+            font-size: 1em;
+            margin: 0;
+            color: lighten($blueColor, 20%);
+            user-select: none;
+        }
+        a {
+            width: fit-content;
+            text-decoration: none;
+            color: #fff;
+            font-size: .9em;
+            margin-top: 3em;
+            font-weight: 600;
+            transition: .1s;
+            text-shadow: 0 0 5px lighten($blueColor, 20%);
+
+            &:hover {
+                color: lighten($blueColor, 10%);
+                text-shadow: 0 0 10px #fff;
+            }
+
+        }
+    }
+    &#reviews {
+        position: relative;
+        
+        .user-reviw {
+            width: 30vw;
+            height: 13vh;
+            position: relative;
+            top: 20vh;
+            left: 5vw;
+            .photo-user {
+                width: 6vh;
+                height: 6vh;
+                border-radius: 6vh;
+                background-image: url(images/user-1.jpg);
+                background-repeat: no-repeat;
+                background-size: 6.5vh;
+
+            }
+            .comment-user {
+                width: 26vw;
+                height: 10vh;
+                border-radius: 0 2vh 2vh;
+                background-color: #fff;
+                padding: .5em 1em;
+                box-sizing: border-box;
+
+                position: absolute;
+                right: 0;
+                bottom: 0;
+
+                color: #000;
+                font-size: .4em;
+                text-align: left;
+            }
+            &.two {
+                position: relative;
+                left: 65vw;
+                .photo-user {
+                    background-image: url(images/user-2.jpg);
+                    background-size: 8vh;
+                    position: absolute;
+                    right: 0;
+
+            
+                }
+                .comment-user {
+                    border-radius: 2vh 0 2vh 2vh;
+
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+
+                    color: #000;
+                    font-size: .4em;
+                    text-align: left;
+                }
+
+            }
+            &.three {
+                .photo-user {
+                    background-image: url(images/user-3.jpg);
+                    background-size: 9vh;
+
+                }
+            
+            }
+        }
+        form {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            h2 {
+                font-size: 1em;
+                font-weight: 600;
+                text-align: center;
+            }
+            textarea {
+              width: 60vw;  
+              margin: auto;
+              outline: none;
+              border: 0;
+              border-radius: 1vw 1vw 0;
+              padding: 1em;
+              
+            }
+            button {
+                width: 30vw;
+                height: 6vh;
+                margin: 2vh auto 4vh;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: .6em;
+                font-weight: 600;
+                background-color: $blueColor;
+
+                border: 0;
+                border-radius: 1vw;
+                &:hover {
+                    background-color: darken($blueColor, 10%);
+                    color: #fff;
+                }
+            }
+        }
+    }
+    &#apply {
+        padding-top: 15vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .product {
+            width: 10vw;
+            height: 15vw;
+            border: 1px solid #fff;
+            border-radius: 1vh;
+            overflow: hidden;
+            text-align: center;
+            
+            .image {
+                height: 10vw;
+                background-image: url(images/skies.webp);
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+            .name {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 10vw;
+                height: 5vw;
+                a {
+                    display: inline-block;
+                    text-decoration: none;
+                    color: $blueColor;
+                    font-size: .6em;
+                    font-weight: 600;
+
+                    &:hover {
+                        color: #fff;
+                    }
+                }
+            }
+
+            &:hover {
+                border: 1px solid $blueColor;
+            }
+            &.two {
+                .image {
+                    background-image: url(images/helmet.webp);
+                }
+            }
+            &.three {
+                .image {
+                    background-image: url(images/goggles.webp);
+                }
+            }
+            &.four {
+                .image {
+                    background-image: url(images/backpack.webp);
+                }
+            }
+            &.five {
+                .image {
+                    background-image: url(images/Boots.webp);
+                }
+            }
+        }
+    }
+
+}

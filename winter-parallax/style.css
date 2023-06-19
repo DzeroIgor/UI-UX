@@ -1,0 +1,34 @@
+.bgi-1 .tree {
+  background-image: url(images/1.png);
+  width: 500px;
+  height: 630px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  right: 0;
+  bottom: 30px;
+}
+
+.bgi-2 {
+  background-image: url(images/2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bgi-3 {
+  background-image: url(images/3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bgi-4 {
+  background-image: url(images/4.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bgi-5 {
+  background-image: url(images/5.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}/*# sourceMappingURL=style.css.map */

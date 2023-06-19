@@ -1,0 +1,41 @@
+
+
+.parallax {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    
+    
+    .parallax-container {
+        box-sizing: border-box;
+        position: absolute;
+            top: -20px;
+            bottom: -60px;
+            left: -10px;
+            right: -20px;
+            perspective: 100px;
+            width: 105%;
+    
+            scrollbar-width: thin;
+            scrollbar-color: transparent transparent;
+            overflow: auto;
+    
+            .layer {
+                font-size: 5em;
+                width: 100%;
+                height: 103%;
+                color: aliceblue;
+                position: absolute;
+    
+                @for $n from 1 through 5 {
+                    &.layer-#{$n} {
+                        z-index: -1 * $n;
+                        transform: translateZ(-250px * $n) scale(2.5 * $n + 1);
+                        margin: 40% / $n 0;
+                    }
+                }
+    
+            }
+        }
+}
