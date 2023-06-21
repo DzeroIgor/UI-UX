@@ -1,0 +1,22 @@
+@mixin red-border {
+    border: 1px solid red;
+}
+
+.swiper {
+    width: 90vw;
+    height: 650px;
+    margin-top: 6vh;
+    
+    --swiper-pagination-bottom: 2vh;        
+    // --swiper-navigation-color: red;
+    --swiper-theme-color: #ff6868;
+    
+    .swiper-wrapper {
+
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }  
+}

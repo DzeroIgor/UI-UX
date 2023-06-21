@@ -1,0 +1,12 @@
+.swiper {
+  width: 90vw;
+  height: 650px;
+  margin-top: 6vh;
+  --swiper-pagination-bottom: 2vh;
+  --swiper-theme-color: #ff6868;
+}
+.swiper .swiper-wrapper .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=style.css.map */
