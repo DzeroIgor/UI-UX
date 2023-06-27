@@ -1,0 +1,27 @@
+.swiper {
+  width: 90vw;
+  height: 85vh;
+  margin-top: 6vh;
+  --swiper-pagination-bottom: 2vh;
+  --swiper-theme-color: #ff6868;
+}
+.swiper .swiper-wrapper .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+.swiper .swiper-wrapper .swiper-slide img {
+  height: 60vh;
+  width: auto;
+  aspect-ratio: 5/7;
+  box-shadow: 0 0 7px 5px #dddddd;
+}
+
+@media screen and (min-width: 1500px) {
+  .swiper-slide-active,
+  .swiper-slide-active + .swiper-slide + .swiper-slide {
+    opacity: 0.3;
+    scale: 0.8;
+  }
+}/*# sourceMappingURL=style.css.map */
