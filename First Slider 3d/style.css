@@ -1,0 +1,122 @@
+body {
+  background-color: #345;
+  margin: 0;
+}
+
+@media screen and (min-width: 800px) {
+  .container {
+    height: 800px;
+    overflow: hidden;
+    margin: 10vh auto;
+  }
+  .container .carousel {
+    width: 90vw;
+    margin: 15vh auto;
+  }
+  .container .carousel .slick-list {
+    overflow: visible;
+  }
+  .container .carousel .slick-current img {
+    transform: rotateY(55deg) scale(1.3);
+    opacity: 0.4;
+    filter: grayscale(0.5);
+  }
+  .container .carousel .slick-current + .slick-slide img {
+    transform: rotateY(0deg) scale(1.1);
+  }
+  .container .carousel .slick-current + .slick-slide + .slick-slide img {
+    transform: rotateY(-55deg) scale(1.3);
+    opacity: 0.4;
+    filter: grayscale(0.5);
+  }
+  .container .carousel .slick-current + .slick-slide + .slick-slide ~ .slick-slide img {
+    transform: rotateY(-90deg);
+  }
+  .container .carousel .slick-slide {
+    perspective: 1500px;
+  }
+  .container .carousel img {
+    width: 100%;
+    margin: auto;
+    pointer-events: none;
+    transform: rotateY(90deg);
+    transition: 0.5s;
+  }
+  .container .carousel .slick-prev {
+    left: -50px;
+    position: absolute;
+    z-index: 1000;
+  }
+  .container .carousel .slick-prev::before {
+    font-size: 50px;
+  }
+  .container .carousel .slick-next {
+    right: -20px;
+  }
+  .container .carousel .slick-next::before {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .container {
+    height: 90vh;
+    overflow: hidden;
+    margin: 5vh auto;
+  }
+  .container .carousel {
+    width: 60vw;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: start;
+  }
+  .container .carousel .slick-list {
+    overflow: visible;
+    margin: 3vh auto;
+  }
+  .container .carousel .slick-current img {
+    transform: rotateX(-65deg) scale(1.3);
+    opacity: 0.4;
+    filter: grayscale(0.5);
+  }
+  .container .carousel .slick-current + .slick-slide img {
+    transform: rotateX(0deg) scale(1.1);
+  }
+  .container .carousel .slick-current + .slick-slide + .slick-slide img {
+    transform: rotateX(65deg) scale(1.3);
+    opacity: 0.4;
+    filter: grayscale(0.5);
+  }
+  .container .carousel .slick-current + .slick-slide + .slick-slide ~ .slick-slide img {
+    transform: rotateX(90deg);
+  }
+  .container .carousel .slick-slide {
+    perspective: 1500px;
+  }
+  .container .carousel img {
+    width: 100%;
+    margin: auto;
+    pointer-events: none;
+    transform: rotateX(-90deg);
+    transition: 0.5s;
+  }
+  .container .carousel .slick-prev {
+    z-index: 1000;
+    position: absolute;
+    transform: rotate(90deg);
+    left: 0vw;
+    top: 0;
+  }
+  .container .carousel .slick-prev::before {
+    font-size: 50px;
+  }
+  .container .carousel .slick-next {
+    transform: rotate(90deg);
+    position: absolute;
+    left: 60vw;
+    top: 0;
+  }
+  .container .carousel .slick-next::before {
+    font-size: 50px;
+  }
+}/*# sourceMappingURL=style.css.map */
